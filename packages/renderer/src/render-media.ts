@@ -59,6 +59,7 @@ export type RenderMediaOptions = {
 	envVariables?: Record<string, string>;
 	quality?: number;
 	frameRange?: FrameRange | null;
+	skipNFrames?: number | null;
 	puppeteerInstance?: PuppeteerBrowser;
 	overwrite?: boolean;
 	onProgress?: RenderMediaOnProgress;
@@ -94,6 +95,7 @@ export const renderMedia = async ({
 	onProgress,
 	overwrite,
 	onDownload,
+	skipNFrames,
 	dumpBrowserLogs,
 	onBrowserLog,
 	onStart,

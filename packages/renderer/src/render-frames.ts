@@ -61,6 +61,7 @@ type RenderFramesOptions = {
 	parallelism?: number | null;
 	quality?: number;
 	frameRange?: FrameRange | null;
+	skipNFrames?: number | null;
 	dumpBrowserLogs?: boolean;
 	puppeteerInstance?: PuppeteerBrowser;
 	browserExecutable?: BrowserExecutable;
